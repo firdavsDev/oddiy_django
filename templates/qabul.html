@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+{%block content%}
+ <h2>Biz sizni qabul qilishga tayyormiz.</h2>
+<h3>Online qabul</h3>
+    <p><br></p>
+<p><br></p>
+<form action="server/nomi" method="GET">
+<label for="ismi" >Ismingizni kiriting</label>
+<input type="text" name="ismi" id="ismi">
+<br>
+<br>
+<label for="otasi">Otangizni ismini kiriting</label>
+<input type="text" name="otasi" id="otasi">
+<br>
+<br>
+<label for="telefon">Telefon raqamingizni kiriting</label>
+<input  type="text" name="telefon" id="telefon">
+<select name="telefon" id="telefon">
+    
+</select>
+<br>
+<br>
+<label for="ma'lumot">Ma'lumotboma</label>
+<input type="file" name="ma'lumot" id="ma'lumot">
+<br>
+<br>
+<label for="rasm">8 donalik 3/4 rasm</label>
+<input type="file" name="rasm" id="rasm">
+<br>
+<br>
+<label for="til">Tilni tanlang</label>
+<select name="til" id="til">
+    <option value="uz">UZB</option>
+    <option value="ru">RU</option>
+</select>
+
+<br>
+<br>
+
+<label for="passport">Passport yoki Guvohnoma raqamingizni kiriting</label>
+<input type="text" name="passport" id="passport">
+<br>
+<br>
+<input type="submit" value="Yuborish">
+</form>
+{%endblock content%}
